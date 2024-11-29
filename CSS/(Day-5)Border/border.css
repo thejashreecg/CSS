@@ -1,0 +1,95 @@
+div{
+    width: 300px;
+    height: 300px;
+    background-color: brown;
+    border: black;
+    /* border-top-left-radius: 100px;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 50px;
+     */
+    /* border-radius: 40px;
+    border-radius: 100px 0px;
+    border-radius: 30px 10px 400px; */
+    border-radius: 100px 10px 70px 0px; 
+}
+
+/* border style for Text */
+h1{
+    width: 200px;
+    text-align: center;
+}
+#solid{
+    border-style: solid;
+    border-width: 3px;
+    border-color: brown;
+}
+#dotted{
+    border-style: dotted;
+    border-width: 3px;
+    border-color: brown;
+}
+#double{
+    border-style: double;
+    border-width: 3px;
+    border-color: brown;
+}
+#dashed{
+    border-style: dashed;
+    border-width: 3px;
+    border-color: brown;
+}
+
+/* short hand key for Border style for text */
+#shortmix{
+    border-top: solid orange 2px;
+    border-right: double rgb(19, 12, 1) 2px;
+    border-bottom: dotted orange 2px;
+    border-left: dashed orange 2px;
+}
+
+#mix{
+    border-top-style: solid;
+    border-top-color: red;
+    border-top-width: 2px;
+    border-right-style: double;
+    border-right-color: blue;
+    border-right-width: 5px;
+    border-bottom-style: dotted;  
+    border-bottom-color: green;
+    border-bottom-width: 8px;
+    border-left-style: dashed;  
+    border-left-color: rgb(3, 24, 3);
+    border-left-width: 8px;
+}
+
+/* border style for Image */
+img{
+    height: 100px;
+    width: 100px;
+}
+#ridge{
+    border-style: ridge;
+    border-width: 30px;
+    border-color: brown;
+}
+#groove{
+    border-style: groove;
+    border-width: 30px;
+    border-color: brown;
+}
+#inset{
+    border-style: inset;
+    border-width: 30px;
+    border-color: brown;
+}
+#outset{
+    border-style: outset;
+    border-width: 30px;
+    border-color: brown;
+}
+
+/* short hand key for text using ridge, groove,inset,outet */
+#short{
+    border: ridge 15px green;
+}
