@@ -1,0 +1,16 @@
+div{
+    width: 100px;
+    height: 200px;
+    background-color: rgb(136, 0, 0);
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+}
+#a{
+    width: 240px;
+    height: 350px;
+    background-color: rgb(25, 0, 71);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 120px;
+    border-bottom-left-radius: 120px;
+}
