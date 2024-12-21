@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KnightBite</title>
+    <style>
+        *{
+            margin: 0px;
+            /* background-color: pink; */
+        }
+
+        /* 1)) Navbar:- AppBar */
+        .appbar{
+            width: 100%;
+            height: 140px;
+            background-color: rgba(0, 0, 0, 0.12);
+            display: flex;
+            position: fixed;
+        }
+
+        /* 1.a) appbar and image icon adjustment */
+        .appbar .nav-icon{
+            width: 50%;
+            height: 140px;
+            /* background-color: aqua; */
+            display: flex;
+            justify-content: center;
+            align-items: center;   
+        }
+
+        .nav-icon img{
+            width: 200px;
+            height: 100px;
+            /* background-color: black; */
+            align-items: center;
+            justify-content: center;
+            background-repeat: no-repeat;
+            /* background-size: contain; */
+            /* margin: top/bottom left/right; */
+            margin: 0px 100px; 
+        }
+
+        @media screen and (min-width:100px) and (max-width:400px) {
+            .nav-icon img{
+                height: 50px;
+                width: 60px;
+            }
+        }
+
+        /* 1.b) appbar and list items adjustment */
+        .appbar .nav{
+            width: 50%;
+            height: 140px;
+            /* background-color: blue; */
+        }
+
+        .nav ul{
+            width: 100%;
+            height: 30px;
+            /* background-color: aqua; */
+            justify-content: space-evenly;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            height: 140px;
+            list-style: none;
+        }
+
+        li{
+            font-size: 25px;
+            color: white;
+        }
+
+        ul a{
+            text-decoration: none;
+            color: white;
+        }
+
+        @media screen and (min-width:100px) and (max-width:700px){
+            ul{
+                width: auto;
+                height: auto;
+                padding-left: 0px;
+            }
+            li{
+                font-size: 15px;
+            }
+        }
+
+        /* Main body content */
+        .content .app-link{
+            width: 100%;
+            height: 100vh;
+            background: url(https://knight-bite.com/res/index/app-link-background.svg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        @media screen and (min-width:100px) and (max-width:400px){
+            .content .app-link{
+                width: 100%;
+                height: 100vh;
+                background: url(https://knight-bite.com/res/index/app-link-background.svg);
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+        }
+        /* @media screen and (min-width:100px) and (max-width:400px){
+            .content .app-link{
+            height: 100vh;
+            width: auto;
+            background: url(https://knight-bite.com/res/index/media-app-link.webp);
+            background-size: cover;
+            background-repeat: no-repeat;
+            }
+        } */
+
+        /* DELICIOUSNESS, ONE CLICK AWAY! */
+        .app-link h3 {
+            color: white;
+            font-family: 'nicotineregular';
+            padding-top: 45vh;
+            font-size: 74px;
+            text-align: center;
+            flex-wrap: wrap;
+        }
+        .app-link h3:hover {
+            color: purple;
+        }
+
+        @media screen and (min-width:100px) and (max-width: 767px) {
+        .app-link h3 {
+                margin: 0 auto;
+                width: 300px;
+                color: white;
+                font-family: 'nicotineregular';
+                font-size: 40px;
+                word-wrap: break-word;
+            }
+            .app-link h3:hover {
+            color: purple;
+        }
+        }
+        @media screen  and (min-width:100px) and (max-width: 300px) {
+        .app-link h3 {
+                margin: 0 auto;
+                width: 100px;
+                color: white;
+                font-family: 'nicotineregular';
+                font-size: 20px;  
+            
+            }
+            .app-link h3:hover {
+            color: purple;
+        }
+        }
+
+        /* Store Containers */
+        
+
+        /* Features */
+        .features{
+            width: 100%;
+            height: 650px;
+        }
+        .features .text{
+            margin-top: 70px;
+            text-align: center;
+            justify-content: center;
+            /* background-color: aqua; */
+            font-size: 50px;
+        }
+
+        .features .features-images{
+            width: 100%;
+            height: 300px;
+            /* background-color: aqua; */
+            display: flex;
+            margin-top: 100px;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        @media screen  and (min-width:100px) and (max-width: 200px){
+            .features .features-images img{
+                margin: 0 40px;
+                width: 60px;
+                height:  60px;
+            }
+            .features .text{
+                font-size: 25px;
+            }
+        }
+        @media screen  and (min-width:100px) and (max-width: 614px){
+            .features .features-images img{
+                margin: 0 35px;
+                width: 60px;
+                height:  60px;
+            }
+        }
+
+        
+        .features-images .hungry{
+            margin: 40px 0;
+            color: #424242;
+            font-size: 20px;
+            text-align: center;
+            width: 190px;
+            
+        }
+
+        /* Banner-1 */
+        .banner-1 {
+            text-align: center;
+            display: flex;
+            background-repeat: no-repeat;
+            background-position: left;
+            background-image: url(https://knight-bite.com/res/index/banner-1.webp);
+            background-size:cover ;
+            height: 650px;
+            width: 100%;
+        }
+
+        @media screen and (min-width:100px) and (max-width:400px){
+            .banner-1{
+                width: 100%;
+                margin-top: 100px;
+                height: 100vh;
+                background: url(https://knight-bite.com/res/index/banner-1.webp);
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+        }
+        .banner-1 #ab{
+                margin-top: 300px;
+                width: 300%;
+                color: white;
+                font-family: 'nicotineregular';
+                font-size: 100px;
+                word-wrap: break-word;
+                
+        }
+        .banner-1 #ab:hover{
+            color: purple;
+        }
+
+        @media screen  and (min-width:100px) and (max-width: 300px) {
+        .banner-1 #ab{
+                margin-top: 300px;
+                margin-left: 10px;
+                width: 100px;
+                color: white;
+                font-family: 'nicotineregular';
+                font-size: 20px;  
+            
+            }
+            .banner-1 #ab:hover{
+            color: purple;
+        }
+        }
+        /* Banner-2 */
+        .banner-2 {
+            text-align: center;
+            display: flex;
+            background-repeat: no-repeat;
+            background-position: left;
+            background-image: url(https://knight-bite.com/res/index/media-banner-2.webp);
+            background-size:cover ;
+            height: 650px;
+            width: 100%;
+        }
+
+        @media screen and (min-width:100px) and (max-width:400px){
+            .banner-2{
+                width: 100%;
+                margin-top: 100px;
+                height: 100vh;
+                background: url(https://knight-bite.com/res/index/media-banner-2.webp);
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+        }
+        .banner-2 #abc{
+                margin-top: 300px;
+                width: 300%;
+                color: white;
+                font-family: 'nicotineregular';
+                font-size: 100px;
+                word-wrap: break-word;
+                
+        }
+        .banner-2 #abc:hover{
+            color: purple;
+        }
+
+        @media screen  and (min-width:100px) and (max-width: 300px) {
+        .banner-2 #abc{
+                margin-top: 150px;
+                margin-left: 10px;
+                width: 100px;
+                color: white;
+                font-family: 'nicotineregular';
+                font-size: 20px;  
+            
+            }
+            .banner-2 #abc:hover{
+            color: purple;
+        }
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="appbar">
+        <div class="nav-icon">
+            <img src="logo.png" alt="">
+        </div>
+        <div class="nav">
+            <ul>
+                <li>Home</li>
+                <a href=""><li>About</li></a>
+                <a href=""><li>Menu</li></a>
+                <a href=""><li>Franchise</li></a>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Body content -->
+    <div class="content">
+        <div class="app-link">
+            <h3>DELICIOUSNESS, ONE CLICK AWAY!</h3>
+            <!-- <div class="containers">
+                <a href="https://order.knight-bite.com/" target="_blank" ><button class="pink-btn">Order On Web</button></a>
+                <h3 >Or</h3>
+
+                <div class="Stores">
+                    <a href="https://apps.apple.com/in/app/knight-bite-food-delivery-app/id1387840512">
+                    <div class="App-Store"></div></a>
+                    <a href="https://play.google.com/store/apps/details?id=com.axndxsoftwarehub.knightbite&hl=en">
+                    <div class="Google-Store"></div></a>
+                </div>
+
+            </div> -->
+
+        </div>
+    </div>
+
+    <!-- Features -->
+     <div class="features">
+        <h1 class="text">Features</h1>
+        <div class="features-images">
+            <div><img src="https://www.knight-bite.com/res/index/feature-1.svg" width="200px" height="200px">
+            <div class="Hungry" style="text-align: center; justify-content: space-evenly;">Late Night Delivery Till <br>4 Am</div></div>
+            <div><img src="https://www.knight-bite.com/res/index/feature-2.svg" width="200px" height="200px">
+            <div class="Hungry" style="text-align: center; justify-content: space-evenly;">Order On App Or Call <br>080-4710607</div></div>
+            <div><img src="https://www.knight-bite.com/res/index/feature-3.svg" width="200px" height="200px">
+            <div class="Hungry" style="text-align: center; justify-content: space-evenly;">Delivery within 40 <br>Mins</div></div>
+            <div><img src="https://www.knight-bite.com/res/index/feature-4.svg" width="200px" height="200px">
+            <div class="Hungry" style="text-align: center; justify-content: space-evenly;">Food for every kind of <br>Hunger</div></div>
+            <div><img src="https://www.knight-bite.com/res/index/feature-5.svg" width="200px" height="200px">
+            <div class="Hungry" style="text-align: center; justify-content: space-evenly;">Place Bulk Orders Through <br>App</div></div>
+        </div>
+     </div>
+
+     <!-- Banner -->
+      <div class="banner-1">
+        <h3 id="ab">Enjoy Food, Enjoy Life</h3>
+      </div>
+      <div class="banner-2"><h3 id="abc">Burger, fries, shakes and many more</h3></div>
+</body>
+</html>

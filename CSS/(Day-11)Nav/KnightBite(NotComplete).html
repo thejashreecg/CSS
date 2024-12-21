@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+    margin: 0;
+}
+#bg{
+    width: 100%;
+    height: 600px;
+    background-color: aqua;
+    background-image: url(https://static.vecteezy.com/system/resources/previews/032/323/808/large_2x/exploding-burger-with-vegetables-and-melted-cheese-on-black-background-generative-ai-free-photo.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 600px;
+}
+nav{
+    width: 100%;
+    height: 90px;
+    display: flex;
+    background: rgba(0,0,0,0.1);
+    position: fixed;
+    align-content: baseline;
+}
+nav .logo{
+width: 50%;
+height: 90px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+ nav .logo img{
+    width: 50%;
+    padding-top: 20px;
+    padding-right: 100px;
+ } 
+ nav .links{
+    width: 400px;
+    height: 90px;
+ }
+
+ nav .links ul{
+    width: 90%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+     flex-wrap: wrap; 
+ }
+ nav .links ul li{
+    list-style: none;
+    color: aliceblue;
+    justify-content: space-between;
+    transition: 1s;
+ }
+ nav .links ul li:hover{
+    color: darkmagenta;
+    text-decoration: underline;
+ }
+ h1{
+    padding-top: 200px;
+    width: 100%;
+    display: block;
+    color: white;
+    font-family: "Nunito";
+   /* font-optical-sizing: auto; */
+    font-weight: bolder;
+    font-style: black 900;
+    font-size: 4em;
+    /* white-space: nowrap;
+    overflow: hidden; */
+    transition: all .4s;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+ }
+  .pink{
+    background: #FF5672;
+    padding: 10px 20px;
+    width: 195px;
+    color: white;
+    font-size: 19px;
+    font-weight: 700;
+    border-radius: 9px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s;
+ }
+ .pink{
+   justify-content: center;
+ }
+ h2{color: white;
+    font-size: 40px;
+   margin-top: -50px;
+
+ }
+ 
+ .ios-store {
+    width: 203px;
+    height: 70px;
+    background: url(https://knight-bite.com/res/index/ios-store.svg);
+    background-repeat: no-repeat;
+    
+    transition: 2s;
+}
+ .ios-store, .android-store {
+    transition: all 0.5s;
+    margin: 0 30px;
+     
+    
+}
+.android-store {
+    width: 213px;
+    height: 80px;
+    background: url(https://knight-bite.com/res/index/google-play-badge.svg);
+    background-repeat: no-repeat;
+   
+   transition: 2s;}
+
+    .pink-btn {
+        background: #FF5672;
+        padding: 10px 20px;
+        width: 195px;
+        color: white;
+        font-size: 19px;
+        font-weight: 700;
+        border-radius: 9px;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        transition: all 0.3s;
+        text-align: center;
+        align-content: center;
+        
+      }
+        h3 {
+            display: block;
+            font-size: 1.17em;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            font-weight: bold;
+           
+            text-align: center;
+        }
+        .stores-container {
+            display: flex;
+            margin-top: 10px;
+           justify-content: center;}
+     
+
+   
+  div .button{
+   
+   width: 100%;
+   justify-content: center;
+   display: flex;
+}
+.ios-store:hover{
+background-size: 180px 50px ;
+  
+}
+.android-store:hover{
+   background-size: 180px 50px ;
+}
+    </style>
+</head>
+<body>
+     <div id="bg">
+        <nav>
+            <div class="logo"> <img src="logo.png" alt=""></div>
+            <div class="links"> <ul>
+                <li>HOME</li>
+                <li>ABOUT</li>
+                <li>MENU </li>
+                <li>FRANCHISE</li>
+            </ul></div>
+         </nav>
+         <h1>Deliciousness, One Click Away</h1> <br><br>
+         <div>
+             <div class="button">
+                <a href="http://order.knight-bite.com">
+                    <button class="pink-btn" style="align-self: center;">order on web</button>
+                 </a> 
+             </div>
+             <h3 style="color: white;" >OR</h3>
+             <div class="stores-container">
+                <a href="http://apps.apple.com/in/app/knight-bite-food-delivery-app/id1387840512"><div class="ios-store"></div></a>
+                <a href="http://play.google.com/store/apps/details?id=com.axndxsoftwarehub.knightbite&amp;hl=en"><div class="android-store"></div></a>
+             </div>
+         </div>
+         </div>
+          
+     
+
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebPage</title>
+    <style>
+        *{
+            margin: 0px;
+        }
+
+        /* 1st div */
+        #nav{
+            width: 100%;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: aqua;
+        }
+        @media screen and (min-width:100px) and (max-width:400px){
+            #nav{
+                width: auto;
+                height: auto;
+            }
+        }
+
+        /* 2nd div */
+        #ul{
+            background-color: yellow;
+            align-items: center;
+            justify-content: center;
+        }
+        ul{
+            width: 100%;
+            height: 30px;
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        
+        @media screen and (min-width:100px) and (max-width:400px){
+            ul li{
+                width: auto;
+                height: auto;
+                padding-left: 0px;
+            }
+        }
+
+        /* Buy Now */
+        #buy{
+            width: 300px;
+            height: 50px;
+            /* background-color: brown; */
+            margin-top: 150px;
+            margin-left: 50px;
+        }
+        @media screen and (min-width:100px) and (max-width:400px){
+            #buy{
+                font-size: 9px;
+                margin-left: 0px;
+                margin-top: 50px;
+            }
+        }
+
+        /* image */
+        #bg img{
+            width: 800px;
+            height: 300px;
+            /* border: 2px solid aqua; */
+            position: relative;
+            top: -200px;
+            left: 400px;
+            
+        }
+        @media screen and (min-width:100px) and (max-width:700px){
+            #bg img{
+                width: 100px;
+                height: auto;
+                position: relative;
+                top: -10px;
+                left: 10px;
+            }
+        }
+
+        /* h3 and last div */
+        #hd{
+            /* border: 2px solid aqua; */
+            position: relative;
+            top: -200px;
+        }
+        @media screen and (min-width:100px) and (max-width:700px){
+        #hd{
+            position: relative;
+            top: 10px;
+        }
+        }
+    </style>
+</head>
+<body>
+    <div id="nav"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis incidunt assumenda, quos necessitatibus tenetur id nobis! Cumque, aperiam porro. Distinctio architecto corrupti sed! Deserunt nesciunt labore aut rerum unde delectus consequuntur, harum sapiente voluptatem, iusto repudiandae saepe! Aspernatur neque veniam nihil ullam alias dolore praesentium suscipit earum quam? Vero, officia!</p></div>
+    <div id="ul">
+        <ul>
+        <a href=""><li>ipad</li></a>
+        <a href=""><li>offers</li></a>
+        <a href=""><li>shops</li></a>
+        <a href=""><li>networks</li></a>
+        <a href=""><li>ratings</li></a>
+        <a href=""><li>bestone</li></a>
+        <a href=""><li>buy</li></a>
+        </ul>
+    </div>
+    <div id="buy"><a href=""><h1>BUY NOW>>>>></h1></a></div>
+    <div id="bg"><img src="IPADIMG.avif" alt=""></div>
+    <div id="hd"><h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui sint doloribus ipsa nobis repudiandae reiciendis, mollitia similique quis est iure soluta perferendis veniam rem sunt facere a, cum id magnam ipsum inventore nulla. Vero voluptate voluptatem reiciendis impedit pariatur quae deserunt quibusdam alias mollitia ratione hic nostrum, laborum ipsam obcaecati! <br><br>
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos quis debitis nulla dolorem iusto. Sapiente nisi dolore sint officia. Eos perspiciatis rerum adipisci culpa odio id a saepe, excepturi cumque sit aperiam aspernatur illo natus dicta sunt eum! Vel quae quam doloremque minima. Ea molestias quisquam nihil quas! Aliquam modi praesentium quidem, voluptas necessitatibus dolores. Dolore aspernatur aperiam numquam esse cupiditate, officia, beatae voluptates vel laboriosam debitis expedita ducimus quis animi unde voluptas incidunt. Est, quis fugiat tempore provident praesentium sequi minus officiis consectetur, quos ratione debitis commodi. Aspernatur ipsam dicta reiciendis necessitatibus dolorem numquam quibusdam sint voluptates debitis nesciunt?
+    </h3></div>
+</body>
+</html>

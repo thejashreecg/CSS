@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Properties</title>
+    <style>
+        h1, p, div{
+            background-color: aqua;
+
+            /* h1, p, div is block level element */
+            /* block level element is converted into inline level element by  display: inline; */
+            display: inline;
+
+            /* if we apply height:100px after applying display: inline; then height property does not works once check by running it */
+            height: 100px; 
+        }
+
+        b, i{
+            background-color: greenyellow;
+
+            /* b, i is Inline level element */
+            /* Inline level element is converted into Block level element by  display: block; */
+            display: block;
+
+            /* if we apply height:100px after applying display: block; then height property will works once check by running it */
+            height: 100px;
+        }
+
+        i{
+            /* If you want comment this and vceck */
+            background-color: blue;
+        }
+
+        h2{
+            background-color: pink;
+
+            /* h2 is a block level element */
+
+            /* h2 is converted into inline using display property  display: inline;
+            it does not allows height property */
+
+            /* h2 is block level element  display: block; which allows height property by applying only display property */
+
+            /* h2 is converted into inline and block level element using display property  display: inline-block;
+            it does allows height property is block level element,
+            and also convert it into inline level element */
+
+            display:inline-block;
+
+            height: 100px;
+        }
+        
+        #a{
+            width: 300px;
+            height: 300px;
+            background-color: red;
+        }
+        h3{
+            color: white;
+            text-align: center;
+            font-size: 25px;
+            display: none;
+        }
+        #a:hover h3{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Feeling Sleepy</h1>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <div>Lorem ipsum dolor sit amet consectetur.</div>
+    <hr>
+    <i>Lazy Day</i>
+    <b>Lorem ipsum dolor sit.</b>
+    <hr>
+    <h2>Lorem, ipsum dolor.</h2>
+    <hr>
+    <main id="a">
+        <h3>Lorem ipsum dolor sit amet.</h3>
+    </main>
+</body>
+</html>

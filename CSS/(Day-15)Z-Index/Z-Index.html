@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #a{
+           background-color: red;
+           width: 100px;
+           height: 100px; 
+           position: relative;
+           z-index: 5;
+           /* Then replace z-index: -5; and check the output */
+           text-align: center;
+        }
+        #b{
+           background-color: blue;
+           width: 100px;
+           height: 100px; 
+           position: relative;
+           left: 70px;
+           top: -20px;
+           z-index: 4;
+           /* Then replace z-index: -4; and check the output */
+           text-align: center;
+        }
+        #c{
+           background-color: aqua;
+           width: 100px;
+           height: 100px; 
+           position: relative;
+           left: 140px;
+           top: -40px;
+           z-index: 3;
+            /* Then replace z-index: -3; and check the output */
+           text-align: center;
+        }
+        #d{
+           background-color: orange;
+           width: 100px;
+           height: 100px; 
+           position: relative;
+           left: 210px;
+           top: -60px;
+           z-index: 2;
+            /* Then replace z-index: -2; and check the output */
+           text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div  id="a">1</div>
+    <div  id="b">2</div>
+    <div  id="c">3</div>
+    <div  id="d">4</div>
+</body>
+</html>
